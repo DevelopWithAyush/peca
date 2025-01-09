@@ -2,20 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: JollyLodger-Regular;
+  src: local("JollyLodger-Regular "),
+    url("/fonts/Jolly_Lodger/JollyLodger-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Space-Comics;
+  src: local("Space-Comics"),
+    url("/fonts/Space-Comics/Space-Comics.ttf") format("truetype");
+}
+@font-face {
+  font-family: MordernAntiqua-Regular;
+  src: local("MordernAntiqua-Regular"),
+    url("/fonts/MordernAntiqua/MordernAntiqua-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: ComicNeue-Light;
+  src: local("ComicNeue-Light"),
+    url("/fonts/ComicNeue/ComicNeue-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: ComicNeue-LightItalic;
+  src: local("ComicNeue-LightItalic"),
+    url("/fonts/ComicNeue/ComicNeue-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: ComicNeue-Regular;
+  src: local("ComicNeue-Regular"),
+    url("/fonts/ComicNeue/ComicNeue-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: ComicNeue-RegularItalic;
+  src: local("ComicNeue-RegularItalic"),
+    url("/fonts/ComicNeue/ComicNeue-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: ComicNeue-Bold;
+  src: local("ComicNeue-Bold"),
+    url("/fonts/ComicNeue/ComicNeue-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: ComicNeue-BoldItalic;
+  src: local("ComicNeue-BoldItalic"),
+    url("/fonts/ComicNeue/ComicNeue-Bold.ttf") format("truetype");
+}
+
+
+
+html::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 1rem;
 }
