@@ -1,6 +1,8 @@
+import TextGeneration from "../common/TextGeneration";
+
 const Slide3 = () => {
   return (
-    <main className="min-h-screen w-full bg-[url(/Images/slide3.png)] bg-cover bg-center pt-[137px] flex flex-col   ">
+    <main className="min-h-screen relative w-full bg-[url(/Images/slide3.png)] bg-cover bg-center pt-[137px] flex flex-col   ">
       <img
         className="absolute top-0 left-0"
         src="/Images/slide3Image.png"
@@ -80,7 +82,7 @@ const Text = ({ title, desc }: Props) => {
       </p>
       <p className="font-comic-neue-bold_700 max-w-[561px] text-[#FFF] text-[24px]">
         {" "}
-        {desc}
+        <TextGeneration className="items-center justify-center" text={desc} />
       </p>
     </div>
   );

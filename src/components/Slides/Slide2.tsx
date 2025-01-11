@@ -1,4 +1,8 @@
-import { SecondPageTextRectangle1, SecondPageTextRectangle2 } from "@/assets/Svg";
+import {
+  SecondPageTextRectangle1,
+  SecondPageTextRectangle2,
+} from "@/assets/Svg";
+import TextGeneration from "../common/TextGeneration";
 
 const Slide2 = () => {
   return (
@@ -23,7 +27,7 @@ const Slide2 = () => {
             style={{
               WebkitTextStrokeWidth: "3px",
               WebkitTextStrokeColor: "#F12E05",
-              paintOrder: "stroke"
+              paintOrder: "stroke",
             }}
           >
             PEPIUS CAESER{" "}
@@ -39,13 +43,15 @@ const Slide2 = () => {
               style={{
                 WebkitTextStrokeWidth: "3px",
                 WebkitTextStrokeColor: "#F12E05",
-                paintOrder: "stroke"
+                paintOrder: "stroke",
               }}
-            
-              className="text-[#FFBA70] w-full px-[18px] max-w-[475px] leading-[110%]  text-center font-jolly-lodger_400 text-[36px] tracking-[3.6px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+              className="text-[#FFBA70] w-full px-[18px] max-w-[475px] leading-[110%]  text-center font-jolly-lodger_400 text-[36px] tracking-[3.6px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
+            >
               {" "}
-              NOW, CAESAR’S FIRST ORDER OF BUSINESS IS TO REPAY THE MEN WHO GIVE
-              HIM POWER TO BUILD SUPADAPP BY CONTRIBUTING TO THE PRESALE
+              <TextGeneration className="items-center justify-center"
+                text=" NOW, CAESAR’S FIRST ORDER OF BUSINESS IS TO REPAY THE MEN WHO GIVE
+              HIM POWER TO BUILD SUPADAPP BY CONTRIBUTING TO THE PRESALE"
+              />
             </p>
             <SecondPageTextRectangle1 />
           </div>
@@ -54,12 +60,15 @@ const Slide2 = () => {
               style={{
                 WebkitTextStrokeWidth: "2.5px",
                 WebkitTextStrokeColor: "#F12E05",
-                paintOrder: "stroke"
+                paintOrder: "stroke",
               }}
-            
-              className="text-[#FFBA70] w-full px-[18px] max-w-[475px] leading-[110%]  text-center font-jolly-lodger_400 text-[36px] tracking-[3.6px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
+              className="text-[#FFBA70] w-full px-[18px] max-w-[475px] leading-[110%]  text-center font-jolly-lodger_400 text-[36px] tracking-[3.6px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
+            >
               {" "}
-              THEREFORE THEY GET $PECA CURRENCY AT A HIGHLY DISCOUNTED RATE AND WITH <span className="text-[#FFBA70] text-[48px]">MASSIVE STAKING REWARDS</span> DURING PRESALE
+              <TextGeneration className="items-center justify-center"
+                text={`THEREFORE THEY GET $PECA CURRENCY AT A HIGHLY DISCOUNTED RATE AND WITH MASSIVE STAKING REWARDS DURING PRESALE
+`}
+              />
             </p>
             <SecondPageTextRectangle2 />
           </div>

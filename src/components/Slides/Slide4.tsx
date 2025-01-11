@@ -1,5 +1,5 @@
 import { Slide4Svg1, Slide4Svg2 } from "@/assets/Svg";
-import React from "react";
+import { motion } from "motion/react";
 
 const Slide4 = () => {
   return (
@@ -57,7 +57,7 @@ const Slide4 = () => {
               Buy tokens from your funds. Stake to get staking rewards.
             </span>{" "}
           </div>
-         
+
           <Slide4Svg2 />
         </div>
       </div>
@@ -73,6 +73,25 @@ interface TextProps {
 }
 
 const Text = ({ title, desc }: TextProps) => {
+  const words = desc.split(" ");
+  const child = {
+    hidden: { opacity: 0, y: 0 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 50 },
+    },
+  };
+
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
   return (
     <div className="flex  flex-row items-center">
       <p
@@ -82,16 +101,31 @@ const Text = ({ title, desc }: TextProps) => {
           WebkitTextStrokeColor: "#EE0A73",
         }}
       >
-        {title} {" "}
-        <span
+        {title}{" "}
+        <motion.span
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
           className="text-[#4437A0] text-[32px] font-jolly-lodger_400 tracking-[1.92px]"
           style={{
             WebkitTextStrokeColor: "transparent",
             WebkitTextStrokeWidth: 0,
           }}
         >
-         : {desc}
-        </span>{" "}
+          :
+          {words.map((word, index) => {
+            return (
+              <motion.span
+                variants={child}
+                className="inline-block mr-2"
+                key={index}
+              >
+                {word}
+              </motion.span>
+            );
+          })}
+          {/* <TextGeneration text={desc} /> */}
+        </motion.span>{" "}
       </p>
     </div>
   );

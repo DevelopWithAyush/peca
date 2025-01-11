@@ -1,12 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import { ButtonSvg } from "@/assets/Svg";
 import { motion } from "framer-motion";
+import React, { useState } from "react";
 import Slide1 from "./Slides/Slide1";
 import Slide2 from "./Slides/Slide2";
 import Slide3 from "./Slides/Slide3";
 import Slide4 from "./Slides/Slide4";
 import Slide5 from "./Slides/Slide5";
-import { ButtonSvg } from "@/assets/Svg";
 
 const Carousel: React.FC = () => {
   const slides = [
@@ -36,44 +36,46 @@ const Carousel: React.FC = () => {
   };
 
   return (
-    <div className="">
-      <button
-        className={`absolute z-[999] top-1/2 left-[5%] rotate-180 transform -translate-y-1/2 ${
-          currentIndex === 0 ? "hidden" : "block"
-        }`}
-        onClick={prevSlide}
-      >
-        <ButtonSvg />
-      </button>
-
-      {slides.map((slide, index) => (
-        <motion.div
-          key={index}
-          className={`absolute w-full ${
-            index === currentIndex ? "block" : "hidden"
+    <>
+      <div className="flex flex-col items-start justify-start ">
+        <button
+          className={`absolute z-[999]  top-1/2 left-[5%] rotate-180 transform -translate-y-1/2 ${
+            currentIndex === 0 ? "hidden" : "block"
           }`}
-          initial="initial"
-          whileInView="animate"
-          exit="exit"
-          variants={variants}
-          transition={{
-            duration: 0.7,
-            ease: "easeInOut",
-          }}
+          onClick={prevSlide}
         >
-          {slide}
-        </motion.div>
-      ))}
+          <ButtonSvg />
+        </button>
 
-      <button
-        className={`absolute z-[999] top-1/2 right-[5%] transform -translate-y-1/2 ${
-          currentIndex === slides.length - 1 ? "hidden" : "block"
-        }`}
-        onClick={nextSlide}
-      >
-        <ButtonSvg />
-      </button>
-    </div>
+        {slides.map((slide, index) => (
+          <motion.div
+            key={index}
+            className={`absolute w-full ${
+              index === currentIndex ? "block" : "hidden"
+            }`}
+            initial="initial"
+            whileInView="animate"
+            exit="exit"
+            variants={variants}
+            transition={{
+              duration: 0.7,
+              ease: "easeInOut",
+            }}
+          >
+            {slide}
+          </motion.div>
+        ))}
+
+        <button
+          className={`absolute z-[999] top-1/2 right-[5%] transform -translate-y-1/2 ${
+            currentIndex === slides.length - 1 ? "hidden" : "block"
+          }`}
+          onClick={nextSlide}
+        >
+          <ButtonSvg />
+        </button>
+      </div>
+    </>
   );
 };
 
