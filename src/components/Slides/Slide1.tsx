@@ -90,7 +90,7 @@ export default Slide1;
 
 export const BorderLine = () => {
   return (
-    <div className="w-full h-[49px] mt-[22px] relative z-10  bg-[#FFF566] border-t-[8px] border-b-[8px] border-solid border-[#079307]"></div>
+    <div className="w-full h-[49px] mt-[22px] relative z-100  bg-[#FFF566] border-t-[8px] border-b-[8px] border-solid border-[#079307]"></div>
   );
 };
 

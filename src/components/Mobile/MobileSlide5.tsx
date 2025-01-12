@@ -16,7 +16,7 @@ const MobileSlide5 = () => {
         <div className="bg-[#F8D3D3] flex flex-col items-center  justify-normal py-[30px] px-5 border-[8px] border-solid border-[#FFF] relative  h-full rounded-[32px] w-full ">
           <div className="relative w-auto ">
             <p
-              className="text-[11px] absolute top-[20%] z-20 left-1/2 -translate-x-1/2 w-[70%] text-[#F12E05] font-space-comics_400 tracking-[0.66px]"
+              className="text-[11px] absolute top-[20%] z-20 left-1/2 -translate-x-1/2 w-[80%] text-[#F12E05] font-space-comics_400 tracking-[0.66px]"
               style={{
                 WebkitTextStrokeWidth: "2px",
                 WebkitTextStrokeColor: "#FFD28A",

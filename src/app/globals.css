@@ -5,7 +5,7 @@
 body {
   width: 100vw;
   overflow-x: hidden;
-  background: #4437A0;
+  background: #4437a0;
 }
 
 @font-face {
@@ -56,7 +56,11 @@ body {
     url("/fonts/ComicNeue/ComicNeue-Bold.ttf") format("truetype");
 }
 
-
+@font-face {
+  font-family: Mynerve-Regular;
+  src: local("Mynerve-Regular"),
+    url("/fonts/Mynerve/Mynerve-Regular.ttf") format("truetype");
+}
 
 html::-webkit-scrollbar {
   width: 0.3rem;
@@ -72,65 +76,89 @@ html::-webkit-scrollbar-thumb {
 }
 
 
+ .scroll-bar-hide::-webkit-scrollbar {
+width: 0px;
+ }
 .shimmer {
-		text-align: center;
-		color: rgba(255, 255, 255, 0.1);
-		background: -webkit-gradient(linear, left top, right top, from(#079307), to(#079307), color-stop(0.5, #fff));
-		background: -moz-gradient(linear, left top, right top, from(#079307), to(#079307), color-stop(0.5, #fff));
-		background: gradient(linear, left top, right top, from(#079307), to(#079307), color-stop(0.5, #fff));
-		-webkit-background-size: 125px 100%;
-		-moz-background-size: 125px 100%;
-		background-size: 125px 100%;
-		-webkit-background-clip: text;
-		-moz-background-clip: text;
-		background-clip: text;
-		-webkit-animation-name: shimmer;
-		-moz-animation-name: shimmer;
-		animation-name: shimmer;
-		-webkit-animation-duration: 3s;
-		-moz-animation-duration: 3s;
-		animation-duration: 3s;
-		-webkit-animation-iteration-count: infinite;
-		-moz-animation-iteration-count: infinite;
-		animation-iteration-count: infinite;
-		background-repeat: no-repeat;
-		background-position: 0 0;
-		background-color: #079307;
-    /* transition-delay: 300ms; */
+  text-align: center;
+  color: rgba(255, 255, 255, 0.1);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#079307),
+    to(#079307),
+    color-stop(0.5, #fff)
+  );
+  background: -moz-gradient(
+    linear,
+    left top,
+    right top,
+    from(#079307),
+    to(#079307),
+    color-stop(0.5, #fff)
+  );
+  background: gradient(
+    linear,
+    left top,
+    right top,
+    from(#079307),
+    to(#079307),
+    color-stop(0.5, #fff)
+  );
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #079307;
+  /* transition-delay: 300ms; */
 }
 
 @-moz-keyframes shimmer {
-		0% {
-				background-position: top left;
-		}
-		100% {
-				background-position: top right 110% ;
-		}
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right 110%;
+  }
 }
 
 @-webkit-keyframes shimmer {
-		0% {
-				background-position: top left;
-		}
-		100% {
-				background-position: top right;
-		}
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
 }
 
 @-o-keyframes shimmer {
-		0% {
-				background-position: top left;
-		}
-		100% {
-				background-position: top right -10%;
-		}
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right -10%;
+  }
 }
 
 @keyframes shimmer {
-		0% {
-				background-position: top left;
-		}
-		100% {
-				background-position: top right -50%;
-		}
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right -50%;
+  }
 }

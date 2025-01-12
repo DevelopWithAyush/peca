@@ -14,6 +14,7 @@ export default {
       },
       fontFamily: {
         "jolly-lodger_400": ["JollyLodger-Regular", "sans-serif"],
+        "mynerve-regular_400": ["Mynerve-Regular", "sans-serif"],
         "space-comics_400": ["Space-Comics", "sans-serif"],
         "modern-antiqua_400": ["MordernAntiqua-Regular", "sans-serif"],
         "comic-neue-light_300": ["ComicNeue-Light", "sans-serif"],

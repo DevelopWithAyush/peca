@@ -7,6 +7,7 @@ import Slide2 from "./Slides/Slide2";
 import Slide3 from "./Slides/Slide3";
 import Slide4 from "./Slides/Slide4";
 import Slide5 from "./Slides/Slide5";
+import Slide6 from "./Slides/Slide6";
 
 const Carousel: React.FC = () => {
   const slides = [
@@ -15,6 +16,7 @@ const Carousel: React.FC = () => {
     <Slide3 key={3} />,
     <Slide4 key={4} />,
     <Slide5 key={5} />,
+    <Slide6 key={6} />,
   ];
 
   const [currentIndex, setCurrentIndex] = useState<number>(0);

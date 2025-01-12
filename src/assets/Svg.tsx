@@ -1343,3 +1343,5 @@ export const MobileSlide5Svg3 = () => {
     </svg>
   );
 };
+
+
