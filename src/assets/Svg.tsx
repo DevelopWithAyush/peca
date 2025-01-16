@@ -678,7 +678,7 @@ export const Slide1Background = ({ className }: { className: string }) => {
       viewBox="0 0 1552 1443"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`h-[100vh]  w-auto lg:h-auto lg:w-[100vw] absolute top-0 ${className}  `}
+      className={` w-auto lg:h-auto lg:w-[100vw] absolute top-0 ${className}  `}
     >
       <g filter="url(#filter0_d_19_124)">
         <path

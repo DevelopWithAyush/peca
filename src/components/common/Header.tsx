@@ -15,7 +15,7 @@ const Header = () => {
           items-center ">
             
         <div  className="flex flex-row items-center ">
-          <img src="/Images/logo.png" alt="" className="w-12 lg:w-full lg:h-auto h-12" />
+          <img src="/Images/logo.gif" alt="" className="w-16 bg-transparent h-16" />
           <h1
             className="font-space-comics_400 leading-[110%] md:text-[16px] xl:text-[28px] text-[#FFF]"
             style={{

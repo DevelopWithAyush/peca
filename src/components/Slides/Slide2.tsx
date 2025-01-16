@@ -6,7 +6,7 @@ import TextGeneration from "../common/TextGeneration";
 
 const Slide2 = () => {
   return (
-    <div className="w-full flex flex-col relative min-h-screen items-center bg-[#F7E4AB]">
+    <div className="w-full flex flex-col relative h-auto min-h-screen items-center bg-[#F7E4AB]">
       <svg
         width="953"
         height="982"
@@ -19,7 +19,7 @@ const Slide2 = () => {
         <ellipse cx="476.5" cy="471.5" rx="381.2" ry="522.8" fill="#F8D3D3" />
       </svg>
 
-      <div className=" z-10 flex flex-col md:flex-row items-center justify-center w-full md:pl-[160px] pt-[64px]  ">
+      <div className=" z-10 flex h-auto flex-col md:flex-row items-center justify-center w-full md:pl-[160px] pt-[64px]  ">
         <div className="w-[50%] max-w-[725px] bg-white flex flex-col items-center justify-start px-[36px] pt-[28px] pb-[13px] rounded-[30px]">
           <img src="/Images/slide2.png" alt="" className="w-full" />
           <p

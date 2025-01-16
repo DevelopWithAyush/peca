@@ -33,8 +33,8 @@ const Slide3 = () => {
   return (
     <main className="min-h-screen relative w-full bg-[url(/Images/slide3.png)] bg-cover bg-center pt-[82px] flex flex-col   ">
       <img
-        className="absolute top-0 left-0"
-        src="/Images/slide3Image.png"
+        className="absolute max-w-[344px] w-[244px] rounded-br-[150px]  aspect-square  top-0 left-0"
+        src="/Images/slide3Image1.gif"
         alt=""
       />
       <div className="flex flex-col items-start justify-normal gap-3">

@@ -10,9 +10,9 @@ const MobileSlide4 = () => {
   return (
     <section className="flex flex-col z-10 bg-[#4437A0]  items-center w-full h-[1100px] overflow-hidden relative  justify-center">
       {/* <div className='absolute top-0  w-full h-full'> */}
-      <Slide1Background className="h-[1100px] top-0" />
+      <Slide1Background className="h-[1100px]  top-0" />
       {/* </div> */}
-      <main className="w-full flex h-full flex-col items-center justify-center  p-5  ">
+      <main className="w-full max-w-[500px] flex h-full flex-col items-center justify-center  p-5  ">
         <div className="bg-[#F8D3D3] flex flex-col items-center  justify-normal py-[30px] px-5 border-[8px] border-solid border-[#FFF] relative  h-auto rounded-[32px] w-full ">
                   <div className="relative w-auto ">
                       <p className="text-[11px] absolute top-[20%] z-20 left-1/2 -translate-x-1/2 w-[70%] text-[#F12E05] font-space-comics_400 tracking-[0.66px]"

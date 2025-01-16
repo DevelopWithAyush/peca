@@ -2,7 +2,7 @@ import React from "react";
 
 const Slide6 = () => {
   return (
-    <main className="w-full min-h-screen h-auto bg-[#FFF] relative  ">
+    <main className="w-full min-h-screen bg-[#FFF] relative  ">
       <svg
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
         xmlns="http://www.w3.org/2000/svg"
@@ -63,10 +63,10 @@ const Slide6 = () => {
         </div>
               <div className="w-auto relative h-auto flex mt-10  ">
                   <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[93%] h-[97%] bg-white  rounded-[45px] overflow-hidden ">
-                  <img src="/Images/Slide6MobilePreview.png" alt="" />
+                  <img src="/Images/Slide6MobilePreview.png" className="" alt="" />
                   </div>
 
-                <img src="/Images/Slide6Image2.png" className="relative z-10" alt="" />
+                <img src="/Images/Slide6Image2.png" className="relative z-10 " alt="" />
                   
             </div>
         <div

@@ -11,7 +11,7 @@ const MobileSlide2 = () => {
       {/* <div className='absolute top-0  w-full h-full'> */}
       <Slide2BackgroundSvg className="" />
       {/* </div> */}
-      <main className="w-full flex h-full flex-col items-center justify-normal p-5 ">
+      <main className="w-full max-w-[500px] flex h-full flex-col items-center justify-normal p-5 ">
         <FirstPoster />
         <SecondPoster />
         <ThirdPoster /> 
@@ -25,7 +25,7 @@ export default MobileSlide2;
 const FirstPoster = () => {
   return (
     <div className="w-full relative z-10 rounded-[32px] p-5 flex flex-col bg-[#FFF] items-center justify-start gap-2">
-      <img src="/Images/slide2.png" alt="" />
+      <img src="/Images/slide2.png" alt="" className="" />
       <p
         className="
             text-[40px]

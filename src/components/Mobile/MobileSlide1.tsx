@@ -10,11 +10,11 @@ import Header from "../common/Header";
 import { BorderLine } from "../Slides/Slide1";
 const MobileSlide1 = () => {
   return (
-    <section className="flex flex-col items-center w-full h-[1000px] overflow-hidden relative  justify-center">
-      <Slide1Background className="h-[100vh] -top-[26px] z-0" />
-      <main className="w-full flex h-full flex-col items-start justify-normal pt-5 ">
+    <section className="flex flex-col items-center w-full h-[1000px] pt-[20px] overflow-hidden relative  justify-center">
+      <Slide1Background className="h-[1000px] -top-[26px] z-0" />
         <Header />
         <BorderLine />
+      <main className="w-full max-w-[500px] flex h-full flex-col items-start justify-normal pt-5 ">
         <FirstPoster />
         <SecondPoster />
         <ThirdPoster />

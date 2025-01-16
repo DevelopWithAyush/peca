@@ -117,8 +117,8 @@ const Rectangle2 = () => {
   return (
     <div className="absolute top-[10%] right-[10%] flex flex-col items-center ">
       <img
-        className="relative -bottom-[90px] z-0"
-        src={"/Images/firstpageImage3.png"}
+        className="relative w-[70%] -bottom-[90px] z-0"
+        src={"/Images/slide1Image1.gif"}
         alt="aksfja"
       />
       <FirstPageTextRectangle2 />
@@ -139,7 +139,7 @@ const Rectangle = () => {
   return (
     <>
       <img
-        src="/Images/firstpageImage1.png"
+        src="/Images/slide1Image2.gif"
         className="relative z-50 left-[100px]"
         alt=""
       />

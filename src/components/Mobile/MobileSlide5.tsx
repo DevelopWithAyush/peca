@@ -12,7 +12,7 @@ const MobileSlide5 = () => {
       {/* <div className='absolute top-0  w-full h-full'> */}
       <Slide5Background className="h-[1100px] top-0" />
       {/* </div> */}
-      <main className="w-full flex h-full flex-col items-center justify-center  p-5  ">
+      <main className="w-full max-w-[500px] flex h-full flex-col items-center justify-center  p-5  ">
         <div className="bg-[#F8D3D3] flex flex-col items-center  justify-normal py-[30px] px-5 border-[8px] border-solid border-[#FFF] relative  h-full rounded-[32px] w-full ">
           <div className="relative w-auto ">
             <p

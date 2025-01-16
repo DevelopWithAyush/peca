@@ -21,53 +21,7 @@ export default function Home() {
         <MobileSlide3 />
         <MobileSlide4 />
         <MobileSlide5 />
-        <div className="w-full h-[400px] bg-red-300 overflow-hidden">
-          <div className="w-full h-full overflow-y-auto">
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-            <p>asjfasf</p>
-
-          </div>
-        </div>
-       </div>
+      </div>
     </main>
   );
 }

@@ -37,7 +37,7 @@ const MobileSlide3 = () => {
     <section className="flex flex-col z-10 bg-[#FFCD44]  items-center w-full h-[1000px] overflow-hidden relative  justify-center">
       <MobileSlide3BackgroundSvg />
       {/* </div> */}
-      <main className="w-full  flex h-full flex-col items-center gap-[60px] justify-normal p-5 ">
+      <main className="w-full max-w-[500px]  flex h-full flex-col items-center gap-[60px] justify-normal p-5 ">
         <FirstPoster />
         <SecondPoster />
       

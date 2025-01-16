@@ -18,7 +18,7 @@ const Slide4 = () => {
             </p>
             <Slide4Svg1 className={" "} />
           </div>
-          <img src="/Images/slide4Image.png" alt="" />
+          <img src="/Images/slide4Image1.gif"  alt="" />
         </div>
         <div className="relative">
           <div className="absolute left-0 top-0 w-full h-full flex flex-col items-start justify-start gap-[20px]  pt-[126px] px-[47px] ">
