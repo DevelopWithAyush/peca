@@ -15,11 +15,13 @@ export default function Home() {
   };
 
   useEffect(() => {
-    playSound();
-  },[])
-
+playSound()
+  }, []); 
   return (
     <main>
+      {/* <button onClick={() => {
+        playSound();
+      }}> button</button> */}
       {/* <Header/> */}
       <div className="lg:flex hidden flex-col items-start justify-start">
         <AnimatePresence>
