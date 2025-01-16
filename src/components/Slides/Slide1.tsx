@@ -13,9 +13,9 @@ import Header from "../common/Header";
 
 const Slide1 = () => {
   return (
-    <main className="w-[100vw] min-h-screen h-[928px] overflow-hidden relative  bg-[#4437A0]  flex flex-col items-center justify-center  pt-[35px]    ">
+    <main className="w-[100vw] min-h-screen h-[928px] bg-[url(/Images/FirstSlideBackgroudn.png)] bg-cover bg-center overflow-hidden relative   bg-[#4437A0]  flex flex-col items-center justify-center  pt-[35px]    ">
       {/* <Slide1Background className="w-[100vw]" /> */}
-      <svg width="1552" height="1443" viewBox="0 0 1552 1443" fill="none" xmlns="http://www.w3.org/2000/svg"
+      {/* <svg width="1552" height="1443" viewBox="0 0 1552 1443" fill="none" xmlns="http://www.w3.org/2000/svg"
       className="absolute top-0 left-0 w-[100%] h-[100vh]"
       >
         <g filter="url(#filter0_d_19_124)">
@@ -34,7 +34,7 @@ const Slide1 = () => {
             <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_19_124" result="shape" />
           </filter>
         </defs>
-      </svg>
+      </svg> */}
 
       <section className="flex  h-full flex-col items-start justify-start w-full">
         <Header />

@@ -26,13 +26,16 @@ const MobileSlide4 = () => {
             </p>
             <MobileSlide4Svg />
           </div>
+          <div className="  p-2 overflow-hidden bg-white rounded-[10px]  top-[-30px] z-0">
           <Image
-            src="/Images/slide4Image.png" // Using Next.js Image component
+            src="/Images/slide4Image1.gif" // Using Next.js Image component
             alt="Slide 4"
-            width={500} // Define width
-            height={300} // Define height
-            className="relative top-[-30px] z-0"
+            width={0} // Define width
+            height={0} // Define height
+            layout="responsive"
+            className="relative rounded-[10px] "
           />
+          </div>
           <FirstPoster />
         </div>
       </main>
