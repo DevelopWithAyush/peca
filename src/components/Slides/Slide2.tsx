@@ -3,6 +3,7 @@ import {
   SecondPageTextRectangle2,
 } from "@/assets/Svg";
 import TextGeneration from "../common/TextGeneration";
+import Image from "next/image";
 
 const Slide2 = () => {
   return (
@@ -21,7 +22,16 @@ const Slide2 = () => {
 
       <div className=" z-10 flex h-auto flex-col md:flex-row items-center justify-center w-full md:pl-[160px] pt-[64px]  ">
         <div className="w-[50%] max-w-[725px] bg-white flex flex-col items-center justify-start px-[36px] pt-[28px] pb-[13px] rounded-[30px]">
-          <img src="/Images/slide2.png" alt="" className="w-full" />
+          <Image
+            src="/Images/slide2.png"
+            alt=""
+            layout="responsive"
+            width={626}
+            height={653}
+            quality={90} // Adjust quality for better performance
+            className="w-full"
+          />
+
           <p
             className="text-[#FFBA70] text-[40px] font-jolly-lodger_400 leading-[117.5%] tracking-[4px] "
             style={{
@@ -48,7 +58,8 @@ const Slide2 = () => {
               className="text-[#FFBA70] w-full px-[18px] max-w-[475px] leading-[110%]  text-center font-jolly-lodger_400 text-[36px] tracking-[3.6px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
             >
               {" "}
-              <TextGeneration className="items-center justify-center"
+              <TextGeneration
+                className="items-center justify-center"
                 text=" NOW, CAESAR’S FIRST ORDER OF BUSINESS IS TO REPAY THE MEN WHO GIVE
               HIM POWER TO BUILD SUPADAPP BY CONTRIBUTING TO THE PRESALE"
               />
@@ -65,7 +76,8 @@ const Slide2 = () => {
               className="text-[#FFBA70] w-full px-[18px] max-w-[475px] leading-[110%]  text-center font-jolly-lodger_400 text-[36px] tracking-[3.6px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
             >
               {" "}
-              <TextGeneration className="items-center justify-center"
+              <TextGeneration
+                className="items-center justify-center"
                 text={`THEREFORE THEY GET $PECA CURRENCY AT A HIGHLY DISCOUNTED RATE AND WITH MASSIVE STAKING REWARDS DURING PRESALE
 `}
               />

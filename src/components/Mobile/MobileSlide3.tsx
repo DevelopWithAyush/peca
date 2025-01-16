@@ -1,4 +1,5 @@
 import { MobileSlide3BackgroundSvg } from "@/assets/Svg";
+import Image from "next/image";
 
 type Props = {
   title: string;
@@ -34,13 +35,11 @@ const labes: Props[] = [
 
 const MobileSlide3 = () => {
   return (
-    <section className="flex flex-col z-10 bg-[#FFCD44]  items-center w-full h-[1000px] overflow-hidden relative  justify-center">
+    <section className="flex flex-col z-10 bg-[#FFCD44] items-center w-full h-[1000px] overflow-hidden relative justify-center">
       <MobileSlide3BackgroundSvg />
-      {/* </div> */}
-      <main className="w-full max-w-[500px]  flex h-full flex-col items-center gap-[60px] justify-normal p-5 ">
+      <main className="w-full max-w-[500px] flex h-full flex-col items-center gap-[60px] justify-normal p-5 ">
         <FirstPoster />
         <SecondPoster />
-      
       </main>
     </section>
   );
@@ -52,7 +51,7 @@ const FirstPoster = () => {
   return (
     <div className="flex flex-col items-start justify-start relative pt-[59px] z-10">
       <p
-        className="text-[#FFF] self-center text-[20px] font-space-comics_400 "
+        className="text-[#FFF] self-center text-[20px] font-space-comics_400"
         style={{
           WebkitTextStrokeWidth: "4px",
           WebkitTextStrokeColor: "#EE0A73",
@@ -62,18 +61,20 @@ const FirstPoster = () => {
         PECANOMICS
       </p>
       <p
-        className="text-[#FFF] self-center text-[20px] font-jolly-lodger_400 uppercase mt-2 text-center text-balance "
+        className="text-[#FFF] self-center text-[20px] font-jolly-lodger_400 uppercase mt-2 text-center text-balance"
         style={{
           WebkitTextStrokeWidth: "1px",
           WebkitTextStrokeColor: "#EE0A73",
           paintOrder: "stroke fill",
         }}
       >
-        The engine that powers Pepius Caesars $PECA  machine.
+        The engine that powers Pepius Caesars $PECA machine.
       </p>
-      <img
+      <Image
         src="/Images/MobilePieChart.png"
         alt=""
+        width={500} // Specify width
+        height={300} // Specify height
         className="relative z-10 self-center"
       />
     </div>
@@ -90,12 +91,12 @@ const SecondPoster = () => {
   );
 };
 
-type props = {
+type LabelProps = {
   title: string;
   color: string;
 };
 
-const Label = ({ title, color }: props) => {
+const Label = ({ title, color }: LabelProps) => {
   return (
     <div className="flex flex-row items-center justify-start gap-4">
       <div

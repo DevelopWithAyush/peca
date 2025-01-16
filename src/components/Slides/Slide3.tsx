@@ -1,5 +1,9 @@
-import TextGeneration from "../common/TextGeneration";
+import Image from "next/image";
 
+type Props = {
+  title: string;
+  color: string;
+}
 
 const labels: Props[] = [
   {
@@ -32,11 +36,15 @@ const labels: Props[] = [
 const Slide3 = () => {
   return (
     <main className="min-h-screen relative w-full bg-[url(/Images/slide3.png)] bg-cover bg-center pt-[82px] flex flex-col   ">
-      <img
-        className="absolute max-w-[344px] w-[244px] rounded-br-[150px]  aspect-square  top-0 left-0"
+
+      <Image
         src="/Images/slide3Image1.gif"
         alt=""
+        width={244}
+        height={244} // or any appropriate size that matches your intended design
+        className="absolute max-w-[344px] w-[244px] rounded-br-[150px] aspect-square top-0 left-0"
       />
+
       <div className="flex flex-col items-start justify-normal gap-3">
         
       <p
@@ -54,14 +62,17 @@ const Slide3 = () => {
             WebkitTextStrokeColor: "#EE0A73",
           paintOrder: "stroke fill",
         }}
-        >The  engine  that  powers  Pepius  Caesar's  $PECA  machine.</p>
+        >{"The  engine  that  powers  Pepius  Caesar's  $PECA  machine."}</p>
         </div>
       <div className="w-full flex flex-row items-center justify-center gap-[67px]">
-        <img
-          className="max-w-[690px] h-auto "
+        <Image
           src="/Images/slide3Image1.png"
           alt=""
-        />
+          width={690} // Set the width to match max-w-[690px]
+          height={0} // Set height to auto with layout
+          layout="intrinsic" // Ensures the image maintains its aspect ratio
+          className="max-w-[690px] h-auto"
+        /> 
         <div className="flex flex-col items-start justify-normal gap-[67px]">
           {labels.map((label,index) => {
             return <Label title={label.title} color={label.color} key={index}/>

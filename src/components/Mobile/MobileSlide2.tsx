@@ -1,20 +1,15 @@
-import {
-  Slide2BackgroundSvg,
-  Slide2Mobile1Svg,
-  Slide2Mobile2Svg,
-} from "@/assets/Svg";
+import { Slide2BackgroundSvg, Slide2Mobile1Svg, Slide2Mobile2Svg } from "@/assets/Svg";
 import React from "react";
+import Image from "next/image";
 
 const MobileSlide2 = () => {
   return (
-    <section className="flex flex-col z-10 bg-[#F7E4AB]  items-center w-full h-[1100px] overflow-hidden relative  justify-center">
-      {/* <div className='absolute top-0  w-full h-full'> */}
+    <section className="flex flex-col z-10 bg-[#F7E4AB] items-center w-full h-[1100px] overflow-hidden relative justify-center">
       <Slide2BackgroundSvg className="" />
-      {/* </div> */}
       <main className="w-full max-w-[500px] flex h-full flex-col items-center justify-normal p-5 ">
         <FirstPoster />
         <SecondPoster />
-        <ThirdPoster /> 
+        <ThirdPoster />
       </main>
     </section>
   );
@@ -25,14 +20,15 @@ export default MobileSlide2;
 const FirstPoster = () => {
   return (
     <div className="w-full relative z-10 rounded-[32px] p-5 flex flex-col bg-[#FFF] items-center justify-start gap-2">
-      <img src="/Images/slide2.png" alt="" className="" />
+      <Image
+        src="/Images/slide2.png"
+        alt=""
+        width={500} // Specify width
+        height={300} // Specify height
+        className=""
+      />
       <p
-        className="
-            text-[40px]
-            font-jolly-lodger_400
-            leading-[47px]
-            tracking-[4px]
-            text-[#FFBA70] "
+        className="text-[40px] font-jolly-lodger_400 leading-[47px] tracking-[4px] text-[#FFBA70]"
         style={{
           WebkitTextStrokeWidth: "3px",
           WebkitTextStrokeColor: "#F12E05",
@@ -52,20 +48,7 @@ const SecondPoster = () => {
   return (
     <div className="relative z-10 w-auto ">
       <p
-        className="
-            absolute
-            top-1/2
-            left-1/2
-            -translate-x-1/2
-            -translate-y-1/2
-            w-[80%]
-            text-center
-            leading-[110%]
-            text-[20px]
-            text-[#FFBA70]
-            font-jolly-lodger_400
-            tracking-[2px]
-            "
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] text-center leading-[110%] text-[20px] text-[#FFBA70] font-jolly-lodger_400 tracking-[2px]"
         style={{
           WebkitTextStrokeColor: "#F12E05",
           WebkitTextStrokeWidth: "2px",
@@ -79,24 +62,12 @@ const SecondPoster = () => {
     </div>
   );
 };
+
 const ThirdPoster = () => {
   return (
     <div className="relative z-10 w-auto ">
       <p
-        className="
-            absolute
-            top-1/2
-            left-1/2
-            -translate-x-1/2
-            -translate-y-1/2
-            w-[80%]
-            text-center
-            leading-[110%]
-            text-[20px]
-            text-[#FFBA70]
-            font-jolly-lodger_400
-            tracking-[2px]
-            "
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] text-center leading-[110%] text-[20px] text-[#FFBA70] font-jolly-lodger_400 tracking-[2px]"
         style={{
           WebkitTextStrokeColor: "#F12E05",
           WebkitTextStrokeWidth: "2px",

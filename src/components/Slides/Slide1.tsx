@@ -1,6 +1,5 @@
 "use client";
 import {
-  FirstPageTextEllipse,
   FirstPageTextRectangle,
   FirstPageTextRectangle1,
   FirstPageTextRectangle2,
@@ -9,8 +8,8 @@ import {
 } from "@/assets/Svg";
 // import { motion } from "motion/react";
 import { motion } from "motion/react";
+import Image from "next/image";
 import Header from "../common/Header";
-import TextGeneration from "../common/TextGeneration";
 
 const Slide1 = () => {
   return (
@@ -116,7 +115,9 @@ const Rectangle1 = () => {
 const Rectangle2 = () => {
   return (
     <div className="absolute top-[10%] right-[10%] flex flex-col items-center ">
-      <img
+      <Image
+        width={100}
+        height={100}
         className="relative w-[70%] -bottom-[90px] z-0"
         src={"/Images/slide1Image1.gif"}
         alt="aksfja"
@@ -138,12 +139,14 @@ const Rectangle2 = () => {
 const Rectangle = () => {
   return (
     <>
-      <img
+      <Image
+        width={100}
+        height={100}
         src="/Images/slide1Image2.gif"
-        className="relative z-50 left-[100px]"
+        className="relative w-[515px] h-[528px] z-50 left-[100px]"
         alt=""
       />
-      <div className="absolute w-auto top-1/2 translate-y-[70px] left-[-20px] ">
+      {/* <div className="absolute w-auto top-1/2 translate-y-[70px] left-[-20px] ">
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  text-[#FFF566] text-center font-jolly-lodger_400 leading-[100%]  text-[24px] w-[500px]  tracking-[1.44px]"
           style={{
@@ -159,7 +162,7 @@ const Rectangle = () => {
           />
         </div>
         <FirstPageTextEllipse />
-      </div>
+      </div> */}
     </>
   );
 };
@@ -168,8 +171,10 @@ const Phone = () => {
   return (
     <div className="flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[5%] items-start justify-start">
       <Rectangle3 />
-      <img src="/Images/firstpageImage2.png" alt="phone" />
-      <div
+      {/* <Image width={100}
+      height={100}
+        src="/Images/firstpageImage2.png" alt="phone" className="w-[300px] h-[620px] z-50" /> */}
+      {/* <div
         style={{
           WebkitTextStrokeColor: "#F12E05",
           WebkitTextStrokeWidth: "3px",
@@ -178,7 +183,7 @@ const Phone = () => {
         className="px-[44px] py-[7px] bg-[#079307] border-[5px] border-solid border-[#FFF566] text-[48px] font-jolly-lodger_400 text-[#FFF566] tracking-[2.88px] rounded-[20px]"
       >
         SUPERDAPP
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { Slide4Svg1, Slide4Svg2 } from "@/assets/Svg";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 const Slide4 = () => {
   return (
@@ -16,9 +17,22 @@ const Slide4 = () => {
             >
               HOW TO BUY $PECA
             </p>
-            <Slide4Svg1 className={" "} />
+            <Slide4Svg1 className={"z-[1000] "} />
           </div>
-          <img src="/Images/slide4Image1.gif"  alt="" />
+   
+
+          <div className="w-[522px] h-[612px] flex flex-col items-center justify-center p-4 bg-white rounded-[20px]">
+            <Image
+              src="/Images/slide4Image1.gif"
+              alt=""
+              width={518}
+              height={618}
+              layout="intrinsic"
+              className=" rounded-[20px]"
+              // Ensures the image maintains its aspect ratio
+            />
+          </div>
+
         </div>
         <div className="relative">
           <div className="absolute left-0 top-0 w-full h-full flex flex-col items-start justify-start gap-[20px]  pt-[126px] px-[47px] ">

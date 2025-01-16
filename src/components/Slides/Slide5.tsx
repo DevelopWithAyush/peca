@@ -6,6 +6,7 @@ import {
 } from "@/assets/Svg";
 import React from "react";
 import TextGeneration from "../common/TextGeneration";
+import Image from "next/image";
 
 const Slide5 = () => {
   return (
@@ -24,7 +25,15 @@ const Slide5 = () => {
             </p>
             <Slide5Svg />
           </div>
-          <img src="/Images/slide5Images.png" alt="" />
+ 
+          <Image
+            src="/Images/slide5Images.png"
+            alt=""
+            width={416} // Set width if known, otherwise it will be handled automatically
+            height={416} // Set height if known, otherwise it will be handled automatically
+            layout="intrinsic" // Ensures the image maintains its original size and aspect ratio
+          />
+
         </div>
         <div className="flex flex-col items-end ">
           <div className="relative">

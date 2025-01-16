@@ -5,35 +5,36 @@ import {
 } from "@/assets/Svg";
 import { motion } from "motion/react";
 import React from "react";
+import Image from "next/image"; // Import Image from Next.js
 
 const MobileSlide4 = () => {
   return (
-    <section className="flex flex-col z-10 bg-[#4437A0]  items-center w-full h-[1100px] overflow-hidden relative  justify-center">
-      {/* <div className='absolute top-0  w-full h-full'> */}
-      <Slide1Background className="h-[1100px]  top-0" />
-      {/* </div> */}
-      <main className="w-full max-w-[500px] flex h-full flex-col items-center justify-center  p-5  ">
-        <div className="bg-[#F8D3D3] flex flex-col items-center  justify-normal py-[30px] px-5 border-[8px] border-solid border-[#FFF] relative  h-auto rounded-[32px] w-full ">
-                  <div className="relative w-auto ">
-                      <p className="text-[11px] absolute top-[20%] z-20 left-1/2 -translate-x-1/2 w-[70%] text-[#F12E05] font-space-comics_400 tracking-[0.66px]"
-                          style={{
-                          WebkitTextStrokeWidth:"2px",
-                              WebkitTextStrokeColor:"#FFD28A",
-                          paintOrder:"stroke fill"
-                      }}
-                      >HOW TO BUY $PECA</p>
+    <section className="flex flex-col z-10 bg-[#4437A0] items-center w-full h-[1100px] overflow-hidden relative justify-center">
+      <Slide1Background className="h-[1100px] top-0" />
+      <main className="w-full max-w-[500px] flex h-full flex-col items-center justify-center p-5">
+        <div className="bg-[#F8D3D3] flex flex-col items-center justify-normal py-[30px] px-5 border-[8px] border-solid border-[#FFF] relative h-auto rounded-[32px] w-full ">
+          <div className="relative w-auto">
+            <p
+              className="text-[11px] absolute top-[20%] z-20 left-1/2 -translate-x-1/2 w-[70%] text-[#F12E05] font-space-comics_400 tracking-[0.66px]"
+              style={{
+                WebkitTextStrokeWidth: "2px",
+                WebkitTextStrokeColor: "#FFD28A",
+                paintOrder: "stroke fill",
+              }}
+            >
+              HOW TO BUY $PECA
+            </p>
             <MobileSlide4Svg />
           </div>
-          <img
-            src="/Images/slide4Image.png"
-            alt=""
+          <Image
+            src="/Images/slide4Image.png" // Using Next.js Image component
+            alt="Slide 4"
+            width={500} // Define width
+            height={300} // Define height
             className="relative top-[-30px] z-0"
           />
           <FirstPoster />
         </div>
-        {/* 
-          <SecondPoster />
-          <ThirdPoster />  */}
       </main>
     </section>
   );
@@ -43,8 +44,8 @@ export default MobileSlide4;
 
 const FirstPoster = () => {
   return (
-    <div className="relative z-10 w-auto ">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[56%] w-[70%] h-[70%] ">
+    <div className="relative z-10 w-auto">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[56%] w-[70%] h-[70%]">
         <p
           className="text-[#FFFDFD] font-jolly-lodger_400 text-[18px] tracking-[1.08px]"
           style={{
@@ -58,21 +59,18 @@ const FirstPoster = () => {
         <Text title="Token Supply" desc="8000,000,000" />
         <Text
           title="Get Wallet"
-          desc=" - You will already have a wallet.
- If not, Install a crypto wallet"
+          desc=" - You will already have a wallet. If not, Install a crypto wallet"
         />
         <Text
           title="Fund Wallet"
           desc=" - Fund your wallet with sol coins at solana chain."
         />
         <Text
-          title="
-                Buy & Stake
-                "
+          title="Buy & Stake"
           desc="- Connect your wallet on the website."
         />
         <span
-          className="text-[#4437A0] relative  text-[18px] font-jolly-lodger_400 tracking-[1.92px]"
+          className="text-[#4437A0] relative text-[18px] font-jolly-lodger_400 tracking-[1.92px]"
           style={{
             WebkitTextStrokeColor: "transparent",
             WebkitTextStrokeWidth: 0,
@@ -113,7 +111,7 @@ const Text = ({ title, desc }: TextProps) => {
     },
   };
   return (
-    <div className="flex  flex-row items-center">
+    <div className="flex flex-row items-center">
       <p
         className="text-[#FFFDFD] font-jolly-lodger_400 text-[18px] tracking-[1.92px]"
         style={{
@@ -145,7 +143,6 @@ const Text = ({ title, desc }: TextProps) => {
               </motion.span>
             );
           })}
-          {/* <TextGeneration text={desc} /> */}
         </motion.span>{" "}
       </p>
     </div>

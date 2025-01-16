@@ -41,7 +41,7 @@ const Carousel: React.FC = () => {
     <>
       <div className="flex flex-col items-start justify-start ">
         <button
-          className={`absolute z-[999]  top-1/2 left-[5%] rotate-180 transform -translate-y-1/2 ${
+          className={`fixed z-[999]  top-1/2 left-[5%] rotate-180 transform -translate-y-1/2 ${
             currentIndex === 0 ? "hidden" : "block"
           }`}
           onClick={prevSlide}
@@ -69,7 +69,7 @@ const Carousel: React.FC = () => {
         ))}
 
         <button
-          className={`absolute z-[999] top-1/2 right-[5%] transform -translate-y-1/2 ${
+          className={`fixed z-[999] top-1/2 right-[5%] transform -translate-y-1/2 ${
             currentIndex === slides.length - 1 ? "hidden" : "block"
           }`}
           onClick={nextSlide}

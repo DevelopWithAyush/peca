@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Header = () => {
   return (
     <section className="container max-w-[1119px] mx-auto px-5 md:px-0">
@@ -15,7 +17,13 @@ const Header = () => {
           items-center ">
             
         <div  className="flex flex-row items-center ">
-          <img src="/Images/logo.gif" alt="" className="w-16 bg-transparent h-16" />
+          <Image
+            src="/Images/logo.gif"
+            alt=""
+            width={64}  // Equivalent to w-16 (16 * 4px = 64px)
+            height={64} // Equivalent to h-16 (16 * 4px = 64px)
+            className="bg-transparent"
+          />
           <h1
             className="font-space-comics_400 leading-[110%] md:text-[16px] xl:text-[28px] text-[#FFF]"
             style={{

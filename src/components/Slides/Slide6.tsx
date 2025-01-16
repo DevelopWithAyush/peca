@@ -1,10 +1,20 @@
-import React from "react";
+import Image from "next/image";
+import React, { useEffect } from "react";
 
 const Slide6 = () => {
+  useEffect(() => {
+    document.body.style.background = "white";
+
+    // Cleanup function to revert background when component unmounts
+    return () => {
+      document.body.style.background = ""; // Reset to the default background
+    };
+  }, []);
+
   return (
-    <main className="w-full min-h-screen bg-[#FFF] relative  ">
+    <main className="w-full min-h-screen h-auto bg-[#FFF] relative  ">
       <svg
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-0"
         xmlns="http://www.w3.org/2000/svg"
         width="1240"
         height="982"
@@ -33,9 +43,9 @@ const Slide6 = () => {
       </svg>
       <div className="w-full h-screen  flex flex-row items-start justify-between px-[90px] ">
         <div className="h-full pt-[90px] flex flex-col items-stretch  ">
-          <div className="flex flex-1 w-full items-end  flex-col ">
+          <div className="flex flex-1 w-full items-end  flex-col relative z-[100] ">
             <p
-              className="text-[#FFF] font-mynerve-regular_400 text-[48px] leading-[90%] "
+              className="text-[#FFF] font-mynerve-regular_400  text-[48px] leading-[90%] "
               style={{
                 WebkitTextStrokeWidth: "4px",
                 WebkitTextStrokeColor: "#EE0A73",
@@ -50,6 +60,7 @@ const Slide6 = () => {
               height="56"
               viewBox="0 0 223 56"
               fill="none"
+
             >
               <path
                 d="M220.299 3.02927C175.114 8.15119 129.893 10.8198 84.9117 17.5703C59.0556 21.4506 -18.2603 33.0964 7.87389 32.3197C50.83 31.043 94.0783 23.2153 136.969 19.8877C153.587 18.5985 170.169 17.874 186.821 17.2624C193.229 17.027 198.373 17.6316 188.266 18.8403C143.154 24.2353 97.739 26.5558 52.5936 31.7656C47.776 32.3215 33.6266 34.6733 38.4501 35.1756C56.1307 37.0171 74.5229 35.7278 92.2134 35.3595C113.516 34.916 134.942 33.2071 156.252 33.815C163.906 34.0334 173.883 32.7635 181.306 34.6456C194.441 37.9762 155.028 41.4526 141.641 43.5552C119.362 47.0544 96.9561 49.6833 74.6129 52.7077"
@@ -59,16 +70,39 @@ const Slide6 = () => {
               />
             </svg>
           </div>
-          <img src="/Images/Slide6Image.png" className="self-baseline" alt="" />
-        </div>
-              <div className="w-auto relative h-auto flex mt-10  ">
-                  <div className="absolute z-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[93%] h-[97%] bg-white  rounded-[45px] overflow-hidden ">
-                  <img src="/Images/Slide6MobilePreview.png" className="" alt="" />
-                  </div>
 
-                <img src="/Images/Slide6Image2.png" className="relative z-10 " alt="" />
-                  
-            </div>
+          <Image
+            src="/Images/Slide6Image.png"
+            alt=""
+            width={451} // Set to 0 for layout control (optional)
+            height={451} // Set to 0 for layout control (optional)
+            layout="intrinsic" // Ensures the image maintains its original size
+            className="self-baseline relative z-[100]"
+          />
+        </div>
+        <div className="w-auto h-auto overflow-hidden  z-20 mt-[40px] relative">
+              
+        <Image
+          width={0}
+          height={0}
+          layout="responsive"
+          quality={100}
+            src="/Images/Slide6MobilePreview.png"
+          alt=""
+            className="z-[0] w-[calc(100%-30px)]     absolute
+           top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 "
+        />
+
+        <Image
+          width={0}
+          height={0}
+          layout="responsive"
+          src="/Images/Slide6Image2.png"
+          alt=""
+          className="max-w-[432px] relative max-h-[890px] z-[40] "
+        />
+          </div>
+
         <div
           className="mt-[114px] pt-4 pb-6 px-2 border-[2px] border-solid rounded-[40px] border-[#EE0A73] flex flex-col items-center justify-center"
           style={{
