@@ -6,7 +6,18 @@ import MobileSlide3 from "@/components/Mobile/MobileSlide3";
 import MobileSlide4 from "@/components/Mobile/MobileSlide4";
 import MobileSlide5 from "@/components/Mobile/MobileSlide5";
 import { AnimatePresence } from "motion/react";
+import { useEffect } from "react";
 export default function Home() {
+
+  const playSound = () => {
+    const audio = new Audio('/Sound/royal.mp3'); // Path to the audio file
+    audio.play();
+  };
+
+  useEffect(() => {
+    playSound();
+  },[])
+
   return (
     <main>
       {/* <Header/> */}

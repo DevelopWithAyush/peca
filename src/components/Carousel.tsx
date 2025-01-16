@@ -19,15 +19,22 @@ const Carousel: React.FC = () => {
     <Slide6 key={6} />,
   ];
 
+  const playSound = () => {
+    const audio = new Audio('/Sound/click.mp3'); // Path to the audio file
+    audio.play();
+  };
+
   const [currentIndex, setCurrentIndex] = useState<number>(0);
 
   const nextSlide = (): void => {
+    playSound()
     setCurrentIndex(
       currentIndex === slides.length - 1 ? currentIndex : currentIndex + 1
     );
   };
 
   const prevSlide = (): void => {
+    playSound()
     setCurrentIndex(currentIndex === 0 ? currentIndex : currentIndex - 1);
   };
 
