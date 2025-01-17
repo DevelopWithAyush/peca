@@ -21,7 +21,11 @@ const Slide2 = () => {
       </svg>
 
       <div className=" z-10 flex h-auto flex-col md:flex-row items-center justify-center w-full container mx-auto max-w-[88rem] pt-[3vh]  ">
-        <div className="flex flex-col items-center justify-start  pt-[28px] pb-[13px] rounded-[30px] px-[36px]  bg-white">
+        <div
+          style={{
+            boxShadow: "0px 4px 47.9px 0px rgba(231, 94, 20, 0.56)",
+          }}
+          className="flex flex-col items-center justify-start  pt-[28px] pb-[13px] rounded-[30px] px-[36px]  bg-white">
           <Image
           src={"/Images/slide2.png"}
           width={626}
@@ -49,35 +53,7 @@ const Slide2 = () => {
             KINGDOM
           </p>
         </div>
-        {/* <div className="  bg-white flex flex-col items-center justify-start px-[36px] pt-[28px] pb-[13px] rounded-[30px]"
-          style={{
-            boxShadow: "0px 4px 47.9px 0px rgba(231, 94, 20, 0.56)",
-        }}
-        >
-          <Image
-            src="/Images/slide2.png"
-            alt=""
-            // layout="responsive"
-            width={626}
-            height={653}
-            quality={90} // Adjust quality for better performance
-          />
-
-          <p
-            className="text-[#FFBA70] text-[40px] font-jolly-lodger_400 leading-[117.5%] tracking-[4px] mt-[11.31px] "
-            style={{
-              WebkitTextStrokeWidth: "6px",
-              WebkitTextStrokeColor: "#F12E05",
-              paintOrder: "stroke",
-            }}
-          >
-            PEPIUS CAESER{" "}
-          </p>
-          <p className="text-[#AC341B] text-[20px] font-modern-antiqua_400 text-center mt-[14px] ">
-            ON HIS WAY TO MAKE THE SUPERDAPP WITH THE SUPPORT OF THE WHOLE
-            KINGDOM
-          </p>
-        </div> */}
+     
         <div className="flex-1  flex flex-col items-center justify-start ">
           <div className="relative ">
             
