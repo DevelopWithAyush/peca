@@ -40,7 +40,12 @@ const Header = () => {
           <a href=""> <img src="/Images/x.png"  className="w-[32px] h-[32px]" alt="" /></a>
           <a href=""> <img src="/Images/Insta.png"  className="w-[32px] h-[32px]" alt="" /></a>
           <a href=""> <img src="/Images/Telegram.png"  className="w-[32px] h-[32px]" alt="" /></a>
-          <a href=""> <img src="/Images/dxto.png"  className="w-[32px] h-[32px]" alt="" /></a>
+          {/* {isMute ? ( 
+            <button >
+              <Image src="/Images/mute.png"  className="w-[32px] h-[32px]" alt="" />
+          </button>
+          ): (<Image src='/Images/play.png' className="w-[32px] h-[32px]" alt="" />) } */}
+          {/* <a href=""> <img src="/Images/dxto.png"  className="w-[32px] h-[32px]" alt="" /></a> */}
 
         </div>
 

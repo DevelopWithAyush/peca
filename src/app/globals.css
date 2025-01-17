@@ -20,9 +20,9 @@ body {
     url("/fonts/Space-Comics/Space-Comics.ttf") format("truetype");
 }
 @font-face {
-  font-family: MordernAntiqua-Regular;
-  src: local("MordernAntiqua-Regular"),
-    url("/fonts/MordernAntiqua/MordernAntiqua-Regular.ttf") format("truetype");
+  font-family: ModernAntiqua-Regular;
+  src: local("ModernAntiqua-Regular"),
+    url("/fonts/MordernAntiqua/ModernAntiqua-Regular.ttf") format("truetype");
 }
 
 @font-face {

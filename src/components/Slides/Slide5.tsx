@@ -10,15 +10,16 @@ import Image from "next/image";
 
 const Slide5 = () => {
   return (
-    <main className="w-full min-h-screen  bg-[#079307] bg-[url(/Images/slide5.png)] bg-cover bg-center flex flex-col justify-center items-center">
-      <div className="px-[15px] relative pb-[25px]  pt-[135px] bg-[#F8D3D3] border-[#FFF] border-solid border-[23px] rounded-[45px] flex flex-row items-center justify-center ">
-        <div className="absolute bottom-[27%] left-0">
-          <div className="absolute left-[80%] top-[-125px]">
+    <main className="w-full min-h-screen   bg-[#079307] bg-[url(/Images/slide5.png)] bg-cover bg-center flex flex-col justify-center items-center">
+      <div className="px-[15px] relative pt-[25px]   bg-[#F8D3D3] border-[#FFF] border-solid border-[23px] rounded-[45px] flex flex-col items-end justify-">
+        <div className="absolute bottom-[25%] left-0">
+          <div className="absolute left-[70%] top-[-105px]">
             <p
               className="text-[22px] text-[#F12E05] font-space-comics_400 absolute top-[20%] left-[20%] "
               style={{
-                WebkitTextStrokeWidth: "2px",
+                WebkitTextStrokeWidth: "4px",
                 WebkitTextStrokeColor: "#FFBF59",
+                paintOrder:"stroke fill"
               }}
             >
               THE LONG ROAD AHEAD
@@ -29,20 +30,21 @@ const Slide5 = () => {
           <Image
             src="/Images/slide5Images.png"
             alt=""
-            width={416} // Set width if known, otherwise it will be handled automatically
+            width={369} // Set width if known, otherwise it will be handled automatically
             height={416} // Set height if known, otherwise it will be handled automatically
             layout="intrinsic" // Ensures the image maintains its original size and aspect ratio
           />
 
         </div>
-        <div className="flex flex-col items-end ">
+        <div className=" relative top-[70px] flex flex-col items-end ">
           <div className="relative">
             <div className="absolute top-[30%] left-0 w-[100%] flex px-[48px]  flex-col items-start justify-start  ">
               <p
                 className="text-[32px] text-[#FFF] font-jolly-lodger_400 tracking-[1.92px] leading-[110%] "
                 style={{
-                  WebkitTextStrokeWidth: "2px",
+                  WebkitTextStrokeWidth: "4px",
                   WebkitTextStrokeColor: "#EE0A73",
+                  paintOrder:"stroke fill"
                 }}
               >
                 {" "}
@@ -58,13 +60,14 @@ const Slide5 = () => {
             </div>
             <FifthSlideTextSvg />
           </div>
-          <div className="relative">
+          <div className="relative top-[-40px] ">
             <div className="absolute top-[30%] right-4  flex px-[48px]  flex-col items-start justify-start  ">
               <p
                 className="text-[32px] text-[#FFF] font-jolly-lodger_400 tracking-[1.92px] leading-[110%] "
                 style={{
-                  WebkitTextStrokeWidth: "2px",
+                  WebkitTextStrokeWidth: "4px",
                   WebkitTextStrokeColor: "#EE0A73",
+                  paintOrder:"stroke fill"
                 }}
               >
                 {" "}
@@ -80,13 +83,14 @@ const Slide5 = () => {
             </div>
             <FifthSlideTextSvg1 />
           </div>
-          <div className="relative">
+          <div className="relative top-[-80px] ">
             <div className="absolute top-[52%] left-[40px] flex px-[48px]  flex-row items-start justify-start  ">
               <p
                 className="text-[32px] text-[#FFF] font-jolly-lodger_400 tracking-[1.92px] leading-[110%] "
                 style={{
-                  WebkitTextStrokeWidth: "2px",
+                  WebkitTextStrokeWidth: "4px",
                   WebkitTextStrokeColor: "#EE0A73",
+                  paintOrder:"stroke fill"
                 }}
               >
                 {" "}

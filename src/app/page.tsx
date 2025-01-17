@@ -8,15 +8,34 @@ import MobileSlide5 from "@/components/Mobile/MobileSlide5";
 import { AnimatePresence } from "motion/react";
 import { useEffect } from "react";
 export default function Home() {
+  // const [isMute,setIsMute] = useState(false)
 
   const playSound = () => {
-    const audio = new Audio('/Sound/royal.mp3'); // Path to the audio file
-    audio.play();
+    const audio = new Audio('/Sound/royal.mp3'); // Correct path to the audio file
+    audio.muted = true; // Mute initially to allow autoplay in some browsers
+    audio.play()
+      .then(() => {
+        audio.muted = false; // Unmute after autoplay starts
+      })
+      .catch((error) => {
+        console.error("Autoplay failed, waiting for user interaction", error);
+      });
   };
 
   useEffect(() => {
-playSound()
-  }, []); 
+    playSound(); // Attempt to play on page load
+
+    const handleUserInteraction = () => {
+      playSound(); // Play on first interaction if autoplay failed
+      window.removeEventListener('mouseenter', handleUserInteraction);
+    };
+
+    window.addEventListener('mouseenter', handleUserInteraction);
+
+    return () => {
+      window.removeEventListener('mouseenter', handleUserInteraction);
+    };
+  }, []);
   return (
     <main>
       {/* <button onClick={() => {
@@ -25,7 +44,7 @@ playSound()
       {/* <Header/> */}
       <div className="lg:flex hidden flex-col items-start justify-start">
         <AnimatePresence>
-          <Carousel />
+          <Carousel  />
         </AnimatePresence>
       </div>
       <div className="lg:hidden flex flex-col items-center relative  justify-center">

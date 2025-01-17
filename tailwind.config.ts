@@ -16,7 +16,7 @@ export default {
         "jolly-lodger_400": ["JollyLodger-Regular", "sans-serif"],
         "mynerve-regular_400": ["Mynerve-Regular", "sans-serif"],
         "space-comics_400": ["Space-Comics", "sans-serif"],
-        "modern-antiqua_400": ["MordernAntiqua-Regular", "sans-serif"],
+        "modern-antiqua_400": ["ModernAntiqua-Regular", "sans-serif"],
         "comic-neue-light_300": ["ComicNeue-Light", "sans-serif"],
         "comic-neue-light-italic_300": ["ComicNeue-LightItalic", "sans-serif"],
         "comic-neue-regular_400": ["ComicNeue-Regular", "sans-serif"],

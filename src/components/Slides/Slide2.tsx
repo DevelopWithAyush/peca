@@ -20,22 +20,53 @@ const Slide2 = () => {
         <ellipse cx="476.5" cy="471.5" rx="381.2" ry="522.8" fill="#F8D3D3" />
       </svg>
 
-      <div className=" z-10 flex h-auto flex-col md:flex-row items-center justify-center w-full md:pl-[160px] pt-[64px]  ">
-        <div className="w-[50%] max-w-[725px] bg-white flex flex-col items-center justify-start px-[36px] pt-[28px] pb-[13px] rounded-[30px]">
+      <div className=" z-10 flex h-auto flex-col md:flex-row items-center justify-center w-full container mx-auto max-w-[88rem] pt-[3vh]  ">
+        <div className="flex flex-col items-center justify-start  pt-[28px] pb-[13px] rounded-[30px] px-[36px]  bg-white">
+          <Image
+          src={"/Images/slide2.png"}
+          width={626}
+          height={653}
+          alt="slide2"
+          />
+          <p
+            className="text-[#FFBA70] text-[40px] font-jolly-lodger_400 leading-[117.5%] tracking-[4px] mt-[11.31px] "
+            style={{
+              WebkitTextStrokeWidth: "6px",
+              WebkitTextStrokeColor: "#F12E05",
+              paintOrder: "stroke",
+            }}
+          >
+            PEPIUS CAESER{" "}
+          </p>
+          <p
+            style={{
+              WebkitTextStrokeColor: "#FFBA70",
+              WebkitTextStrokeWidth:"2px",
+              paintOrder: "stroke fill" ,
+            }}
+            className="text-[#AC341B] leading-[38px] tracking-[3.6px] text-[20px] font-modern-antiqua_400 text-center max-w-[636px] mt-[15.5px] ">
+            ON HIS WAY TO MAKE THE SUPERDAPP WITH THE SUPPORT OF THE WHOLE
+            KINGDOM
+          </p>
+        </div>
+        {/* <div className="  bg-white flex flex-col items-center justify-start px-[36px] pt-[28px] pb-[13px] rounded-[30px]"
+          style={{
+            boxShadow: "0px 4px 47.9px 0px rgba(231, 94, 20, 0.56)",
+        }}
+        >
           <Image
             src="/Images/slide2.png"
             alt=""
-            layout="responsive"
+            // layout="responsive"
             width={626}
             height={653}
             quality={90} // Adjust quality for better performance
-            className="w-full"
           />
 
           <p
-            className="text-[#FFBA70] text-[40px] font-jolly-lodger_400 leading-[117.5%] tracking-[4px] "
+            className="text-[#FFBA70] text-[40px] font-jolly-lodger_400 leading-[117.5%] tracking-[4px] mt-[11.31px] "
             style={{
-              WebkitTextStrokeWidth: "3px",
+              WebkitTextStrokeWidth: "6px",
               WebkitTextStrokeColor: "#F12E05",
               paintOrder: "stroke",
             }}
@@ -46,16 +77,18 @@ const Slide2 = () => {
             ON HIS WAY TO MAKE THE SUPERDAPP WITH THE SUPPORT OF THE WHOLE
             KINGDOM
           </p>
-        </div>
-        <div className="w-[50%]  flex flex-col items-center justify-start ">
+        </div> */}
+        <div className="flex-1  flex flex-col items-center justify-start ">
           <div className="relative ">
+            
             <p
+            
               style={{
-                WebkitTextStrokeWidth: "3px",
-                WebkitTextStrokeColor: "#F12E05",
-                paintOrder: "stroke",
+                WebkitTextStroke: "6px #F12E05",
+                 paintOrder: "stroke fill"
               }}
-              className="text-[#FFBA70] w-full px-[18px] max-w-[475px] leading-[110%]  text-center font-jolly-lodger_400 text-[36px] tracking-[3.6px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 "
+
+              className="text-[#FFBA70] w-full px-[18px] max-w-[475px] leading-[110%]  text-center font-jolly-lodger_400 text-[36px] tracking-[3.6px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[44%] "
             >
               {" "}
               <TextGeneration
@@ -69,7 +102,7 @@ const Slide2 = () => {
           <div className="relative ">
             <p
               style={{
-                WebkitTextStrokeWidth: "2.5px",
+                WebkitTextStrokeWidth: "6px",
                 WebkitTextStrokeColor: "#F12E05",
                 paintOrder: "stroke",
               }}

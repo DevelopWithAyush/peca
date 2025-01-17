@@ -35,7 +35,7 @@ const labels: Props[] = [
 
 const Slide3 = () => {
   return (
-    <main className="min-h-screen relative w-full bg-[url(/Images/slide3.png)] bg-cover bg-center pt-[82px] flex flex-col   ">
+    <main className="min-h-screen relative w-full bg-[url(/Images/slide3.png)] bg-cover bg-center pt-[65px] flex flex-col   ">
 
       <Image
         src="/Images/slide3Image1.gif"
@@ -50,28 +50,29 @@ const Slide3 = () => {
       <p
         className="text-[#FFF] text-[36px] font-space-comics_400  pl-[350px]"
         style={{
-          WebkitTextStrokeWidth: "4px",
+          WebkitTextStrokeWidth: "8px",
           WebkitTextStrokeColor: "#EE0A73",
+          paintOrder: "stroke fill",
         }}
         >
         PECANOMICS
         </p>
-        <p className="pl-[350px] text-[#FFF] text-[48px] font-jolly-lodger_400 leading-[37px] uppercase"
+        <p className="pl-[350px] text-[#FFF] text-[48px] font-jolly-lodger_400 leading-[37px] uppercase mt-[50px]"
           style={{
-          WebkitTextStrokeWidth: "2px",
+          WebkitTextStrokeWidth: "4px",
             WebkitTextStrokeColor: "#EE0A73",
           paintOrder: "stroke fill",
         }}
         >{"The  engine  that  powers  Pepius  Caesar's  $PECA  machine."}</p>
         </div>
-      <div className="w-full flex flex-row items-center justify-center gap-[67px]">
+      <div className="w-full flex flex-row items-center justify-center gap-[67px] ">
         <Image
           src="/Images/slide3Image1.png"
           alt=""
-          width={690} // Set the width to match max-w-[690px]
-          height={0} // Set height to auto with layout
+          width={648} // Set the width to match max-w-[690px]
+          height={636} // Set height to auto with layout
           layout="intrinsic" // Ensures the image maintains its aspect ratio
-          className="max-w-[690px] h-auto"
+          className=" h-auto"
         /> 
         <div className="flex flex-col items-start justify-normal gap-[67px]">
           {labels.map((label,index) => {
@@ -112,7 +113,7 @@ const Label = ({ title, color }: props) => {
         className="text-[16px] text-[#FFF] leading-6 uppercase font-space-comics_400"
         style={{
           WebkitTextStrokeColor: "#EE0A73",
-          WebkitTextStrokeWidth: "2px",
+          WebkitTextStrokeWidth: "4px",
           paintOrder: "stroke fill",
         }}
       >

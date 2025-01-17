@@ -245,10 +245,11 @@ export const SecondPageTextRectangle1 = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="548"
-      height="406"
+      width="528"
+      height="390"
       viewBox="0 0 548 406"
       fill="none"
+      className="w-[528.91px] h-[390.151px]"
     >
       <g filter="url(#filter0_d_1_336)">
         <path
@@ -304,12 +305,13 @@ export const SecondPageTextRectangle1 = () => {
 
 export const SecondPageTextRectangle2 = () => {
   return (
-    <svg
+  <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="560"
-      height="401"
-      viewBox="0 0 560 401"
+      width="528"
+      height="390"
+      viewBox="0 0 548 406"
       fill="none"
+      className="w-[528.91px] h-[390.151px]"
     >
       <g filter="url(#filter0_d_1_322)">
         <path
@@ -390,15 +392,15 @@ export const ButtonSvg = () => {
   );
 };
 
-export const Slide4Svg1 = ({ className }: { className?: string }) => {
+export const Slide4Svg1 = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="498"
-      height="199"
-      viewBox="0 0 498 199"
+      width="528"
+      height="225"
+      viewBox="0 0 528 225"
       fill="none"
-      className={className}
+      className={"z-[1000]"}
     >
       <g filter="url(#filter0_d_1_392)">
         <path
@@ -456,8 +458,8 @@ export const Slide4Svg2 = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="638"
-      height="735"
+      width="601"
+      height="707"
       viewBox="0 0 638 735"
       fill="none"
     >

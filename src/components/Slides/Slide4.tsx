@@ -5,23 +5,24 @@ import Image from "next/image";
 const Slide4 = () => {
   return (
     <main className="w-full min-h-screen bg-[#4437A0] flex flex-col md:flex-row items-center justify-center bg-[url(/Images/FirstSlideBackgroudn.png)] bg-cover bg-center  ">
-      <div className="rounded-[45px] border-[23px] border-solid border-[#FFF] bg-[#F8D3D3]   flex flex-row px-[34px] py-[80px] items-center justify-center">
+      <div className="rounded-[45px] border-[23px] border-solid border-[#FFF] bg-[#F8D3D3]   flex flex-row px-[34px] items-center justify-center">
         <div className="relative">
-          <div className="absolute left-[60%] top-[-80px]">
+          <div className="absolute z-10 left-[60%] top-[-90px]">
             <p
               className="text-[#F12E05] absolute top-[40px] text-[22px] left-[80px] font-space-comics_400 "
               style={{
-                WebkitTextStrokeWidth: "2px",
+                WebkitTextStrokeWidth: "4px",
                 WebkitTextStrokeColor: "#FFD28A",
+                paintOrder:"stroke fill"
               }}
             >
               HOW TO BUY $PECA
             </p>
-            <Slide4Svg1 className={"z-[1000] "} />
+            <Slide4Svg1 />
           </div>
    
 
-          <div className="w-[522px] h-[612px] flex flex-col items-center justify-center p-4 bg-white rounded-[20px]">
+          <div className="w-[522px] h-auto relative top-[0px]  flex flex-col items-center justify-center p-4 bg-white rounded-[20px]">
             <Image
               src="/Images/slide4Image1.gif"
               alt=""
@@ -39,8 +40,9 @@ const Slide4 = () => {
             <p
               className="text-[#FFFDFD] font-jolly-lodger_400 text-[32px] tracking-[1.92px]"
               style={{
-                WebkitTextStrokeWidth: "2px",
+                WebkitTextStrokeWidth: "6px",
                 WebkitTextStrokeColor: "#EE0A73",
+                paintOrder:"stroke fill"
               }}
             >
               Contract Address
@@ -62,7 +64,7 @@ const Slide4 = () => {
               desc="- Connect your wallet on the website."
             />
             <span
-              className="text-[#4437A0] relative top-[-32px] text-[32px] font-jolly-lodger_400 tracking-[1.92px]"
+              className="text-[#4437A0] relative top-[-0px] leading-[120%] text-[32px] font-jolly-lodger_400 tracking-[1.92px]"
               style={{
                 WebkitTextStrokeColor: "transparent",
                 WebkitTextStrokeWidth: 0,
@@ -109,10 +111,11 @@ const Text = ({ title, desc }: TextProps) => {
   return (
     <div className="flex  flex-row items-center">
       <p
-        className="text-[#FFFDFD] font-jolly-lodger_400 text-[32px] tracking-[1.92px]"
+        className="text-[#FFFDFD] font-jolly-lodger_400 text-[32px] leading-[120%] tracking-[1.92px]"
         style={{
-          WebkitTextStrokeWidth: "2px",
+          WebkitTextStrokeWidth: "6px",
           WebkitTextStrokeColor: "#EE0A73",
+          paintOrder:"stroke fill"
         }}
       >
         {title}{" "}
@@ -120,7 +123,7 @@ const Text = ({ title, desc }: TextProps) => {
           variants={container}
           initial="hidden"
           whileInView="visible"
-          className="text-[#4437A0] text-[32px] font-jolly-lodger_400 tracking-[1.92px]"
+          className="text-[#4437A0] text-[32px] font-jolly-lodger_400 tracking-[1.92px] "
           style={{
             WebkitTextStrokeColor: "transparent",
             WebkitTextStrokeWidth: 0,
