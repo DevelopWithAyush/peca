@@ -35,7 +35,7 @@ const FirstPoster = () => {
         <p
           className="absolute w-[70%] text-center text-balance text-[#FFBA70] font-jolly-lodger_400 text-[17px] -rotate-[3.299deg] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 leading-[110%]"
           style={{
-            WebkitTextStrokeWidth: "1.5px",
+            WebkitTextStrokeWidth: "3px",
             WebkitTextStrokeColor: "#F12E05",
             paintOrder: "stroke fill",
           }}

@@ -19,7 +19,7 @@ const MobileSlide5 = () => {
             <p
               className="text-[11px] absolute top-[20%] z-20 left-1/2 -translate-x-1/2 w-[80%] text-[#F12E05] font-space-comics_400 tracking-[0.66px]"
               style={{
-                WebkitTextStrokeWidth: "2px",
+                WebkitTextStrokeWidth: "4px",
                 WebkitTextStrokeColor: "#FFD28A",
                 paintOrder: "stroke fill",
               }}
@@ -127,7 +127,7 @@ const Phase = ({
         <motion.p
           className="text-[#FFF] text-[18px] font-jolly-lodger_400 tracking-[1.08px] leading-[110%]"
           style={{
-            WebkitTextStrokeWidth: "1px",
+            WebkitTextStrokeWidth: "2px",
             WebkitTextStrokeColor: "#EE0A73",
             paintOrder: "stroke fill",
           }}

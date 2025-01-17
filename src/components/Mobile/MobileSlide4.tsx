@@ -17,7 +17,7 @@ const MobileSlide4 = () => {
             <p
               className="text-[11px] absolute top-[20%] z-20 left-1/2 -translate-x-1/2 w-[70%] text-[#F12E05] font-space-comics_400 tracking-[0.66px]"
               style={{
-                WebkitTextStrokeWidth: "2px",
+                WebkitTextStrokeWidth: "4px",
                 WebkitTextStrokeColor: "#FFD28A",
                 paintOrder: "stroke fill",
               }}
@@ -26,14 +26,14 @@ const MobileSlide4 = () => {
             </p>
             <MobileSlide4Svg />
           </div>
-          <div className="  p-2 overflow-hidden bg-white rounded-[10px]  top-[-30px] z-0">
+          <div className="  p-2 overflow-hidden bg-white rounded-[10px] relative  top-[-30px] z-0">
           <Image
             src="/Images/slide4Image1.gif" // Using Next.js Image component
             alt="Slide 4"
             width={0} // Define width
             height={0} // Define height
-            layout="responsive"
-            className="relative rounded-[10px] "
+            // layout="responsive"
+            className="relative h-[406px] w-auto    rounded-[10px] "
           />
           </div>
           <FirstPoster />
@@ -52,7 +52,7 @@ const FirstPoster = () => {
         <p
           className="text-[#FFFDFD] font-jolly-lodger_400 text-[18px] tracking-[1.08px]"
           style={{
-            WebkitTextStrokeWidth: "1px",
+            WebkitTextStrokeWidth: "2px",
             WebkitTextStrokeColor: "#EE0A73",
             paintOrder: "stroke fill",
           }}
@@ -118,7 +118,7 @@ const Text = ({ title, desc }: TextProps) => {
       <p
         className="text-[#FFFDFD] font-jolly-lodger_400 text-[18px] tracking-[1.92px]"
         style={{
-          WebkitTextStrokeWidth: "1px",
+          WebkitTextStrokeWidth: "2px",
           WebkitTextStrokeColor: "#EE0A73",
           paintOrder: "stroke fill",
         }}

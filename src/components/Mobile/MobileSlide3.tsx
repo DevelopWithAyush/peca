@@ -1,5 +1,6 @@
 import { MobileSlide3BackgroundSvg } from "@/assets/Svg";
 import Image from "next/image";
+import TextGeneration from "../common/TextGeneration";
 
 type Props = {
   title: string;
@@ -35,9 +36,9 @@ const labes: Props[] = [
 
 const MobileSlide3 = () => {
   return (
-    <section className="flex flex-col z-10 bg-[#FFCD44] items-center w-full h-[1000px] overflow-hidden relative justify-center">
+    <section className="flex flex-col z-10 bg-[#FFCD44] items-center w-full h-[1000px] overflow-hidden relative justify-center py-[100px]">
       <MobileSlide3BackgroundSvg />
-      <main className="w-full max-w-[500px] flex h-full flex-col items-center gap-[60px] justify-normal p-5 ">
+      <main className="w-full max-w-[500px] flex h-auto flex-col items-center gap-[60px] justify-normal p-5 ">
         <FirstPoster />
         <SecondPoster />
       </main>
@@ -53,7 +54,7 @@ const FirstPoster = () => {
       <p
         className="text-[#FFF] self-center text-[20px] font-space-comics_400"
         style={{
-          WebkitTextStrokeWidth: "4px",
+          WebkitTextStrokeWidth: "8px",
           WebkitTextStrokeColor: "#EE0A73",
           paintOrder: "stroke fill",
         }}
@@ -63,12 +64,12 @@ const FirstPoster = () => {
       <p
         className="text-[#FFF] self-center text-[20px] font-jolly-lodger_400 uppercase mt-2 text-center text-balance"
         style={{
-          WebkitTextStrokeWidth: "1px",
+          WebkitTextStrokeWidth: "2px",
           WebkitTextStrokeColor: "#EE0A73",
           paintOrder: "stroke fill",
         }}
       >
-        The engine that powers Pepius Caesars $PECA machine.
+        <TextGeneration text=" The engine that powers Pepius Caesars $PECA machine." className=""/>
       </p>
       <Image
         src="/Images/MobilePieChart.png"
@@ -111,7 +112,7 @@ const Label = ({ title, color }: LabelProps) => {
         className="text-[12px] text-[#FFF] leading-6 uppercase font-space-comics_400"
         style={{
           WebkitTextStrokeColor: "#EE0A73",
-          WebkitTextStrokeWidth: "2px",
+          WebkitTextStrokeWidth: "4px",
           paintOrder: "stroke fill",
         }}
       >
