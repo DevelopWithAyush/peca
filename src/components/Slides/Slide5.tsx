@@ -2,6 +2,7 @@ import {
   FifthSlideTextSvg,
   FifthSlideTextSvg1,
   FifthSlideTextSvg2,
+  GreenRotateBackground,
   Slide5Svg,
 } from "@/assets/Svg";
 import React from "react";
@@ -10,7 +11,8 @@ import Image from "next/image";
 
 const Slide5 = () => {
   return (
-    <main className="w-full min-h-screen   bg-[#079307] bg-[url(/Images/slide5.png)] bg-cover bg-center flex flex-col justify-center items-center">
+    <main className="w-full min-h-screen   bg-[#079307] h-auto relative flex flex-col justify-center items-center">
+      <GreenRotateBackground/>
       <div className="px-[15px] relative pt-[25px]   bg-[#F8D3D3] border-[#FFF] border-solid border-[23px] rounded-[45px] flex flex-col items-end justify-">
         <div className="absolute bottom-[25%] left-0">
           <div className="absolute left-[70%] top-[-105px]">

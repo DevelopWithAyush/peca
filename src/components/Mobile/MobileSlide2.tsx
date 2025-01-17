@@ -1,11 +1,15 @@
-import { Slide2BackgroundSvg, Slide2Mobile1Svg, Slide2Mobile2Svg } from "@/assets/Svg";
+import {
+  Slide2BackgroundSvg,
+  Slide2Mobile1Svg,
+  Slide2Mobile2Svg,
+} from "@/assets/Svg";
 import React from "react";
 import Image from "next/image";
 import TextGeneration from "../common/TextGeneration";
 
 const MobileSlide2 = () => {
   return (
-    <section className="flex flex-col z-10 bg-[#F7E4AB] items-center w-full h-[1100px] overflow-hidden relative justify-center">
+    <section className="flex flex-col z-10 bg-[#F7E4AB] items-center w-full h-auto overflow-hidden relative justify-center">
       <Slide2BackgroundSvg className="" />
       <main className="w-full max-w-[500px] flex h-full flex-col items-center justify-normal p-5 ">
         <FirstPoster />
@@ -38,13 +42,13 @@ const FirstPoster = () => {
       >
         PEPIUS CAESER{" "}
       </p>
-      <p className="text-[16px] text-[#AC341B] leading-[160%] tracking-[2.88px] text-center text-balance font-modern-antiqua_400 "
+      <p
+        className="text-[16px] text-[#AC341B] leading-[160%] tracking-[2.88px] text-center text-balance font-modern-antiqua_400 "
         style={{
           WebkitTextStrokeColor: "#FFBA70",
-          WebkitTextStrokeWidth:"2px",
-          paintOrder:"stroke fill"
-
-      }}
+          WebkitTextStrokeWidth: "2px",
+          paintOrder: "stroke fill",
+        }}
       >
         ON HIS WAY TO MAKE THE SUPERDAPP WITH THE SUPPORT OF THE WHOLE KINGDOM
       </p>
@@ -54,17 +58,20 @@ const FirstPoster = () => {
 
 const SecondPoster = () => {
   return (
-    <div className="relative z-10 w-auto ">
+    <div className="relative z-10 w-full   ">
       <p
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] text-center leading-[110%] text-[20px] text-[#FFBA70] font-jolly-lodger_400 tracking-[2px]"
+        className="absolute z-20  h-auto top-[50%] -translate-y-1/2 left-1/2 -translate-x-1/2  w-[80%]  text-center leading-[110%] text-[20px] text-[#FFBA70] font-jolly-lodger_400 tracking-[2px]"
         style={{
           WebkitTextStrokeColor: "#F12E05",
           WebkitTextStrokeWidth: "4px",
           paintOrder: "stroke fill",
         }}
       >
-        <TextGeneration className="text-center items-center justify-center relative top-[10px]" text="NOW, CAESAR’S FIRST ORDER OF BUSINESS IS TO REPAY THE MEN WHO GIVE HIM
-        POWER TO BUILD SUPADAPP BY CONTRIBUTING TO THE PRESALE"/>
+        <TextGeneration
+          className="text-center items-center justify-center relative top-[10px]"
+          text="NOW, CAESAR’S FIRST ORDER OF BUSINESS IS TO REPAY THE MEN WHO GIVE HIM
+        POWER TO BUILD SUPADAPP BY CONTRIBUTING TO THE PRESALE"
+        />
       </p>
       <Slide2Mobile1Svg />
     </div>
@@ -73,17 +80,20 @@ const SecondPoster = () => {
 
 const ThirdPoster = () => {
   return (
-    <div className="relative z-10 w-auto ">
+    <div className="relative z-10 w-full ">
       <p
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] text-center leading-[110%] text-[20px] text-[#FFBA70] font-jolly-lodger_400 tracking-[2px]"
+        className="absolute z-20 top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 w-[80%] text-center leading-[110%] text-[20px] text-[#FFBA70] font-jolly-lodger_400 tracking-[2px]"
         style={{
           WebkitTextStrokeColor: "#F12E05",
           WebkitTextStrokeWidth: "4px",
           paintOrder: "stroke fill",
         }}
       >
-        <TextGeneration text=" THEREFORE THEY GET $PECA CURRENCY AT A HIGHLY DISCOUNTED RATE AND WITH
-        MASSIVE STAKING REWARDS DURING PRESALE" className="items-center justify-center relative top-[10px]"/>
+        <TextGeneration
+          text=" THEREFORE THEY GET $PECA CURRENCY AT A HIGHLY DISCOUNTED RATE AND WITH
+        MASSIVE STAKING REWARDS DURING PRESALE"
+          className="items-center justify-center relative top-[10px]"
+        />
       </p>
       <Slide2Mobile2Svg />
     </div>

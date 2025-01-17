@@ -11,11 +11,11 @@ import React from "react";
 
 const MobileSlide5 = () => {
   return (
-    <section className="flex flex-col z-10 bg-[#079307] items-center w-full h-[1100px] overflow-hidden relative justify-center">
-      <Slide5Background className="h-[1100px] top-0" />
+    <section className="flex flex-col z-10 bg-[#079307] items-center w-full h-auto overflow-hidden py-[82px] relative justify-center">
+      <Slide5Background className=" absolute top-1/2 left-1/2  -translate-y-1/2 -translate-x-1/2 h-full" />
       <main className="w-full max-w-[500px] flex h-full flex-col items-center justify-center p-5">
-        <div className="bg-[#F8D3D3] flex flex-col items-center justify-normal py-[30px] px-5 border-[8px] border-solid border-[#FFF] relative h-full rounded-[32px] w-full">
-          <div className="relative w-auto">
+        <div className="bg-[#F8D3D3] flex flex-col items-center justify-normal  h-[calc(100%-500px)]  px-5 border-[8px] border-solid border-[#FFF] relative  rounded-[32px] w-full">
+          <div className="relative top-[40px] w-auto">
             <p
               className="text-[11px] absolute top-[20%] z-20 left-1/2 -translate-x-1/2 w-[80%] text-[#F12E05] font-space-comics_400 tracking-[0.66px]"
               style={{
@@ -33,7 +33,7 @@ const MobileSlide5 = () => {
             alt=""
             width={500} // Set width and height for Image component
             height={500}
-            className="relative top-[-40px] z-0"
+            className="relative top-[0px] z-0"
           />
           <FirstPoster />
         </div>
@@ -46,7 +46,7 @@ export default MobileSlide5;
 
 const FirstPoster = () => {
   return (
-    <div className="relative top-[-149px]">
+    <div className="relative top-[-90px]">
       <Phase
         phaseNumber="1"
         title="Website launch, Smart contract development, Audits and security, Presale launch, Community building, Marketing kickoff."

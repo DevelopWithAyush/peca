@@ -7,7 +7,7 @@ import { BorderLine } from "../Slides/Slide1";
 const MobileSlide1 = () => {
   return (
     <section className="flex flex-col items-center w-full bg-[#4437A0]  h-[1000px] pt-[20px] overflow-hidden relative justify-center">
-      <Slide1Background className="h-[1000px] -top-[26px] z-0" />
+      <Slide1Background  />
       <Header />
       <BorderLine />
       <main className="w-full max-w-[500px] flex h-full flex-col items-start justify-normal pt-5 ">

@@ -1,11 +1,22 @@
-import { Slide4Svg1, Slide4Svg2 } from "@/assets/Svg";
+import { BlueRotateBackground, Slide4Svg1, Slide4Svg2 } from "@/assets/Svg";
 import { motion } from "motion/react";
 import Image from "next/image";
+import { useEffect } from "react";
 
 const Slide4 = () => {
+  useEffect(() => {
+    const originalBackground = document.body.style.background;
+    document.body.style.background = "#4437A0";
+
+    return () => {
+      document.body.style.background = originalBackground;
+    };
+  }, []);
+
   return (
-    <main className="w-full min-h-screen bg-[#4437A0] flex flex-col md:flex-row items-center justify-center bg-[url(/Images/FirstSlideBackgroudn.png)] bg-cover bg-center  ">
-      <div className="rounded-[45px] border-[23px] border-solid border-[#FFF] bg-[#F8D3D3]   flex flex-row px-[34px] items-center justify-center">
+    <main className="w-full min-h-screen overflow-hidden  bg-[#4437A0] flex flex-col md:flex-row items-center justify-center h-auto relative  ">
+      <BlueRotateBackground/>
+      <div className="rounded-[45px] relative z-10 border-[23px] border-solid border-[#FFF] bg-[#F8D3D3]   flex flex-row px-[34px] items-center justify-center">
         <div className="relative">
           <div className="absolute z-10 left-[60%] top-[-90px]">
             <p

@@ -9,8 +9,8 @@ import Image from "next/image"; // Import Image from Next.js
 
 const MobileSlide4 = () => {
   return (
-    <section className="flex flex-col z-10 bg-[#4437A0] items-center w-full h-[1100px] overflow-hidden relative justify-center">
-      <Slide1Background className="h-[1100px] top-0" />
+    <section className="flex flex-col z-10 bg-[#4437A0] items-center w-full h-auto overflow-hidden relative justify-center py-[72px]">
+      <Slide1Background />
       <main className="w-full max-w-[500px] flex h-full flex-col items-center justify-center p-5">
         <div className="bg-[#F8D3D3] flex flex-col items-center justify-normal py-[30px] px-5 border-[8px] border-solid border-[#FFF] relative h-auto rounded-[32px] w-full ">
           <div className="relative w-auto">
@@ -33,7 +33,7 @@ const MobileSlide4 = () => {
             width={0} // Define width
             height={0} // Define height
             // layout="responsive"
-            className="relative h-[406px] w-auto    rounded-[10px] "
+            className="relative h-auto w-full    rounded-[10px] "
           />
           </div>
           <FirstPoster />
@@ -48,7 +48,7 @@ export default MobileSlide4;
 const FirstPoster = () => {
   return (
     <div className="relative z-10 w-auto">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-[56%] w-[70%] h-[70%]">
+      <div className="absolute z-30 top-1/2 left-1/2 -translate-x-1/2 -translate-y-[56%] w-[70%] h-[70%]">
         <p
           className="text-[#FFFDFD] font-jolly-lodger_400 text-[18px] tracking-[1.08px]"
           style={{
